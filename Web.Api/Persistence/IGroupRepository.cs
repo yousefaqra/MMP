@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Web.Api.Persistence
 {
-    interface IGroupRepository
+   public interface IGroupRepository
     {
         void addGroup(Group group);
-        Group getGroup(int id);
+        Group getGroup(int groupId);
         IEnumerable<Group> getGroups();
+        bool deleteGroup(int id);
     }
 }

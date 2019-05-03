@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DomainModel.Model
 {
-    class Group
+    public class Group
     {
         public int ID { get; set; }
         public string Code { get; set; }

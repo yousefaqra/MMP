@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DomainModel.Model
 {
-    class Course
+    public class Course
     {
         public int ID { get; set; }
         public string Name { get; set; }
@@ -12,5 +12,7 @@ namespace DomainModel.Model
         public string HospitalName { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+        public int GroupID { get; set; }
+        public Group Group { get; set; }
     }
 }
